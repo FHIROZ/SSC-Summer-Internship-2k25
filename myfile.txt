@@ -1,0 +1,10 @@
+page structure
+
+1. Header page
+2. Linkedin Profiles
+3. Experience
+4. 5th place
+5. photo Gallery
+6. Hackathon at vr matter
+7. photo Gallery
+8. Contact Page
