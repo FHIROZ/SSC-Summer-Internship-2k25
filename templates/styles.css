@@ -1,6 +1,3 @@
-/* ==================== CSS STYLES ==================== */
-
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +5,7 @@
 }
 /* ----------------- Logo---------------------------------*/
 .logo-title-container {
-    /* Optional: for alignment */
+    
     vertical-align: middle;
 }
 
@@ -394,9 +391,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px; /* Optional: match parent border-radius */
-    position: relative; /* Ensures z-index works if needed */
-    z-index: 1; /* Keeps image above ::before */
+    border-radius: 20px; 
+    position: relative;
+    z-index: 1; 
 }
 
 .gallery-item:hover {
@@ -413,8 +410,7 @@ body {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     transition: left 0.5s ease;
-    z-index: 2; /* Ensure the overlay stays above the image */
-}
+    z-index: 2;
 
 .gallery-item:hover::before {
     left: 100%;
