@@ -23,15 +23,22 @@
         </div>
     </header>
 
-    <nav class="nav-banner">
-        <div class="nav-content">
-            <a href="#team" class="nav-item">Our Team</a>
-            <a href="#experience" class="nav-item">Experience</a>
-            <a href="#hackathon" class="nav-item">Hackathon</a>
-            <a href="#gallery" class="nav-item">Gallery</a>
-            <a href="#contact" class="nav-item">Contact</a>
+    
+<!-- Updated HTML Navigation -->
+<nav class="nav-banner">
+    <div class="nav-content">
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span id="menu-icon">☰</span>
+        </button>
+        <div class="nav-items" id="navItems">
+            <a href="#team" class="nav-item" onclick="closeMenu()">Our Team</a>
+            <a href="#experience" class="nav-item" onclick="closeMenu()">Experience</a>
+            <a href="#hackathon" class="nav-item" onclick="closeMenu()">Hackathon</a>
+            <a href="#gallery" class="nav-item" onclick="closeMenu()">Gallery</a>
+            <a href="#contact" class="nav-item" onclick="closeMenu()">Contact</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <main class="main-content">
         <section id="team" class="team-section">
