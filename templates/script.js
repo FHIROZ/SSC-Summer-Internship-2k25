@@ -1,4 +1,6 @@
-
+    // ==================== JAVASCRIPT FUNCTIONALITY ====================
+    
+    // Loading Screen
     window.addEventListener('load', function() {
         const loadingOverlay = document.getElementById('loadingOverlay');
         setTimeout(() => {
@@ -321,7 +323,7 @@
         });
     }
 
-
+    // Console easter egg
     console.log(`
     🎉 SSC Dev Hack - Congratulations on finding this easter egg! 🎉
     
