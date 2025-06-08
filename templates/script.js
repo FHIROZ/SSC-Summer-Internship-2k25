@@ -335,4 +335,37 @@
 
     // Final initialization
     console.log('SSC Dev Hack website fully loaded! 🎊');
+// -----------------------------------------------------------------------------------------------
+function toggleMenu() {
+    const navItems = document.getElementById('navItems');
+    const menuIcon = document.getElementById('menu-icon');
+    
+    navItems.classList.toggle('show');
+    
+    // Change icon based on menu state
+    if (navItems.classList.contains('show')) {
+        menuIcon.innerHTML = '✕';
+    } else {
+        menuIcon.innerHTML = '☰';
+    }
+}
 
+function closeMenu() {
+    const navItems = document.getElementById('navItems');
+    const menuIcon = document.getElementById('menu-icon');
+    
+    navItems.classList.remove('show');
+    menuIcon.innerHTML = '☰';
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const navBanner = document.querySelector('.nav-banner');
+    const navItems = document.getElementById('navItems');
+    const menuIcon = document.getElementById('menu-icon');
+    
+    if (!navBanner.contains(event.target) && navItems.classList.contains('show')) {
+        navItems.classList.remove('show');
+        menuIcon.innerHTML = '☰';
+    }
+});
